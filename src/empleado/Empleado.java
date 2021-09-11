@@ -53,6 +53,11 @@ public class Empleado {
     }
 
     public void setHoras(double horas) {
+        if(horas <0){
+            System.out.println("formato invalido");
+        }else {
+            this.horas = horas;
+        }
         this.horas = horas;
     }
 
